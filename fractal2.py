@@ -1,3 +1,6 @@
+# turtle_miniproject
+# Udacity / Programming Foundations with Python / Lesson 2A
+
 import turtle
 
 window = turtle.Screen()
