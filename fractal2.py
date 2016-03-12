@@ -3,9 +3,9 @@ import turtle
 window = turtle.Screen()
 window.bgcolor("black")
 dave = turtle.Turtle()
-#dave.shape("turtle")
+dave.shape("turtle")
 dave.color("yellow")
-dave.speed(0)
+dave.speed(3)
 dave.pensize(1)
 
 def draw_triangle(turtle_name, size):
@@ -21,8 +21,6 @@ def draw_fractal(turtle_name, length=600,recursion=0,origin=1):
     recursion= recursion + 1
     
 
-
- 
     if recursion < 5:
             draw_triangle(dave,length)
             turtle_name.right(120)
@@ -32,12 +30,7 @@ def draw_fractal(turtle_name, length=600,recursion=0,origin=1):
             draw_fractal(turtle_name,length,origin,recursion)
     else:        
         turtle_name.hideturtle()        
-
-                
-        
-
-
-        
+       
             
     window.exitonclick()
 
